@@ -41,6 +41,11 @@
 - **(add README)** Added README.md - ([797e2c2](https://github.com/NextStd/ns_io/commit/797e2c230f762fcff34a0a6ac7aaeae3b235bdd8)) by @Vaishnav-Sabari-Girish
 
 
+### :zap: Performance
+
+- **(Makefile update)** No need to recompile the whole lib - ([37487e7](https://github.com/NextStd/ns_io/commit/37487e79ed03cc2975fcd1e930dffd305a8d5b6d)) by @Vaishnav-Sabari-Girish
+
+
 ### :wrench: Miscellaneous
 
 - **(cl update)** Update CHANGELOG - ([702d6da](https://github.com/NextStd/ns_io/commit/702d6da1493064133aac1ec2cebf7a27e0de7fca)) by @Vaishnav-Sabari-Girish
