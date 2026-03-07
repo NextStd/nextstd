@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(separate print and println)** Separate print, println - ([9096ba9](https://github.com/NextStd/ns_io/commit/9096ba9f70dac33cd16d17a925ff68b7c0c105fd)) by @Vaishnav-Sabari-Girish
+
 - **(Add user input)** User input added - ([70fb385](https://github.com/NextStd/ns_io/commit/70fb385247fc1d10c800173c7caf90ca1e6377f7)) by @Vaishnav-Sabari-Girish
 
 - **(Added string print)** Add string print - ([a785cdc](https://github.com/NextStd/ns_io/commit/a785cdcafaeecc3742715aaa4ab982fc35cb4be3)) by @Vaishnav-Sabari-Girish
@@ -17,6 +19,8 @@
 
 
 ### :page_facing_up: Documentation
+
+- **(readme update)** Updated README - ([7310b14](https://github.com/NextStd/ns_io/commit/7310b143a6c8637d3a20419f3d86b7d5b580a847)) by @Vaishnav-Sabari-Girish
 
 - **(cl update)** Updated CHANGELOG - ([08b78f9](https://github.com/NextStd/ns_io/commit/08b78f9635290220a3f487fe9df0df0bf3d8309a)) by @Vaishnav-Sabari-Girish
 
