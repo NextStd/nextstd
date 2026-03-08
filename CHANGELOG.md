@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(string)** Add memory-safe ns_string with Small String Optimization - ([332fe2d](https://github.com/NextStd/ns_io/commit/332fe2dbb766ee14a9f7efb81fc57dbb5b2a0fd1)) by @Vaishnav-Sabari-Girish
+
 - **(add cargo workspace)** Workspaces added for better structure - ([c26523f](https://github.com/NextStd/ns_io/commit/c26523fdc0f665a562c0e519579c2d82890975be)) by @Vaishnav-Sabari-Girish
 
 - **(separate print and println)** Separate print, println - ([9096ba9](https://github.com/NextStd/ns_io/commit/9096ba9f70dac33cd16d17a925ff68b7c0c105fd)) by @Vaishnav-Sabari-Girish
@@ -21,6 +23,8 @@
 
 
 ### :page_facing_up: Documentation
+
+- **(readme)** Add USAGE and BUILD instructions - ([3120591](https://github.com/NextStd/ns_io/commit/3120591d37a993776e8104712c377f0db358e712)) by @Vaishnav-Sabari-Girish
 
 - **(README update)** Updated README - ([03ad2ed](https://github.com/NextStd/ns_io/commit/03ad2edecf07556f53847939f1384639a863d4c2)) by @Vaishnav-Sabari-Girish
 
@@ -66,6 +70,10 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #5 from NextStd/feat/strings_plus_header_opt
+
+feat(string): add memory-safe ns_string with Small String Optimization - ([6e68f82](https://github.com/NextStd/ns_io/commit/6e68f82b77b4647a4f641b9c8651b5832deff5d6)) in [#5](https://github.com/NextStd/ns_io/pull/5) by @Vaishnav-Sabari-Girish
 
 - Merge pull request #4 from NextStd/refactor/cargo_workspaces
 
