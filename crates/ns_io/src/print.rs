@@ -34,7 +34,7 @@ pub extern "C" fn ns_print_double(val: f64) {
 #[unsafe(no_mangle)]
 // If the C string is not null terminaltes '\0' , the function will keep on reading memory until
 // the program crashes (Segfault)
-// The below supression is to prevent that 
+// The below suppression is to prevent that 
 #[allow(clippy::not_unsafe_ptr_arg_deref)]
 pub extern "C" fn ns_print_string(ptr: *const c_char) {
     // Never Dereference a NULL pointer
@@ -82,7 +82,7 @@ pub extern "C" fn ns_println_double(val: f64) {
 #[unsafe(no_mangle)]
 // If the C string is not null terminaltes '\0' , the function will keep on reading memory until
 // the program crashes (Segfault)
-// The below supression is to prevent that 
+// The below suppression is to prevent that 
 #[allow(clippy::not_unsafe_ptr_arg_deref)]
 pub extern "C" fn ns_println_string(ptr: *const c_char) {
     // Never Dereference a NULL pointer

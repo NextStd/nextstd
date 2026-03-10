@@ -1,0 +1,17 @@
+[default.extend-words]
+nextstd = "nextstd"
+stdio = "stdio"
+NextStd = "NextStd"
+sso = "sso"
+SSO = "SSO"
+toml = "toml"
+ns = "ns"
+Iinclude = "Iinclude"
+
+[default]
+extend-ignore-identifiers-re = [
+  "^ns_.*$",
+]
+
+[files]
+extend-exclude = ["CHANGELOG.md"]
