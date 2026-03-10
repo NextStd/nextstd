@@ -24,10 +24,14 @@
 
 ### :bug: Bug fixes
 
+- **(cliff.toml)** Bug in cliff.toml - ([cac0a5f](https://github.com/NextStd/nextstd/commit/cac0a5f21767ce01fea613b49f5075a691ad39f6)) by @Vaishnav-Sabari-Girish
+
 - **(typo)** Typo in actions caused failure - ([8e007fb](https://github.com/NextStd/nextstd/commit/8e007fbae0e966074a4f02c98db9dfbc3beee2be)) by @Vaishnav-Sabari-Girish
 
 
-### :package: Other
+### :construction_worker: CI
+
+- **(trigger)** Trigger build - ([ef2d2d5](https://github.com/NextStd/nextstd/commit/ef2d2d54728b17c26ae597ae177d3daf8cc9c006)) by @Vaishnav-Sabari-Girish
 
 - **(write to file)** Git-cliff to write to CHANGELOG.md - ([b60042f](https://github.com/NextStd/nextstd/commit/b60042f8f0a8b2e7a12f52ab58d5634644ad2259)) by @Vaishnav-Sabari-Girish
 
@@ -70,6 +74,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([90979f9](https://github.com/NextStd/nextstd/commit/90979f937df54463a19e60293881e2e33f34a3b6)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([22c3673](https://github.com/NextStd/nextstd/commit/22c3673766d1a7181f38073d6a5e4b8d89e02ea9)) by @github-actions[bot]
 
 - **(cl)** CHANGELOG update - ([4b77cf4](https://github.com/NextStd/nextstd/commit/4b77cf459cefb556a52a552eb822b5a9241e21db)) by @Vaishnav-Sabari-Girish
@@ -92,6 +98,8 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge branch 'main' of github.com:NextStd/nextstd - ([6d073b2](https://github.com/NextStd/nextstd/commit/6d073b2dcbccdb56482ef2b9b65683b72e3d9c2b)) by @Vaishnav-Sabari-Girish
 
 - Merge branch 'main' of github.com:NextStd/nextstd - ([efdaaf6](https://github.com/NextStd/nextstd/commit/efdaaf6779fe307cfcdfb57d5689b92dca6f57d0)) by @Vaishnav-Sabari-Girish
 
