@@ -1,8 +1,6 @@
 on: 
     push: 
-        tags: 
-            - "v*.*.*"
-
+      branches: [ "main" ]
 jobs:
     generate-changelog :
         name: Generate Changelog 
