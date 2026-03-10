@@ -1,7 +1,7 @@
 use std::io::{self};
 use std::ffi::{c_int, c_float,c_double};
 
-// Helper function to read a line from stdin safetly
+// Helper function to read a line from stdin safely
 fn read_line_buffer() -> String {
     let mut buffer = String::new();
 
