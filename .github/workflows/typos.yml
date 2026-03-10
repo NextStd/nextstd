@@ -14,5 +14,3 @@ jobs:
           uses: actions/checkout@v6.0.2
         - name: Run typos checker 
           uses: crate-ci/typos@master
-          with:
-              args: README.md USAGE.md BUILD.md
