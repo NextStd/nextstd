@@ -10,7 +10,7 @@ macro-driven **C API**.
 
 View the [CHANGELOG.md](./CHANGELOG.md)
 
-![version](https://img.shields.io/badge/version-0.1.6-blue)
+![version](https://img.shields.io/badge/version-0.1.7-blue)
 
 > [!IMPORTANT]  
 > NextStd is currently in active development. You cannot install it globally
