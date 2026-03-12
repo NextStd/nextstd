@@ -50,6 +50,8 @@
 
 ### :page_facing_up: Documentation
 
+- **(version update)** Updated version in README - ([113972c](https://github.com/NextStd/nextstd/commit/113972c8272a670a3ac0aa08acf3a000577a22a5)) by @Vaishnav-Sabari-Girish
+
 - **(readme)** Add USAGE and BUILD instructions - ([3120591](https://github.com/NextStd/nextstd/commit/3120591d37a993776e8104712c377f0db358e712)) by @Vaishnav-Sabari-Girish
 
 - **(README update)** Updated README - ([03ad2ed](https://github.com/NextStd/nextstd/commit/03ad2edecf07556f53847939f1384639a863d4c2)) by @Vaishnav-Sabari-Girish
@@ -81,6 +83,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([72e6242](https://github.com/NextStd/nextstd/commit/72e6242909eef7a9a1893b3a2fc45246694c0d65)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([f93ff1b](https://github.com/NextStd/nextstd/commit/f93ff1b382662193c7c021d2ecc88f221b98f558)) by @github-actions[bot]
 
@@ -118,6 +122,8 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge branch 'main' of github.com:NextStd/nextstd - ([541b9e6](https://github.com/NextStd/nextstd/commit/541b9e62207d1f0bd40774390a4554fc9f783434)) by @Vaishnav-Sabari-Girish
 
 - Merge branch 'main' of github.com:NextStd/nextstd - ([6d073b2](https://github.com/NextStd/nextstd/commit/6d073b2dcbccdb56482ef2b9b65683b72e3d9c2b)) by @Vaishnav-Sabari-Girish
 
