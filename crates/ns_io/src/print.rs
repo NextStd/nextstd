@@ -99,12 +99,13 @@ pub extern "C" fn ns_println_string(ptr: *const c_char) {
 // No newline
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_print_ns_string(val: NsString) {
-    let bytes = if val.is_heap {
-        unsafe { std::slice::from_raw_parts(val.data.heap.ptr, val.len) }
-    } else {
-        unsafe { &val.data.inline_data[..val.len] }
+    let bytes: &[u8] = unsafe {
+        if val.is_heap {
+            std::slice::from_raw_parts(val.data.heap.ptr as *const u8, val.len)
+        } else {
+            std::slice::from_raw_parts(val.data.inline_data.as_ptr(), val.len)
+        }
     };
-
     // COnvert to rust string (To handle non-UTF-8)
     let rust_str = String::from_utf8_lossy(bytes);
 
@@ -116,10 +117,12 @@ pub extern "C" fn ns_print_ns_string(val: NsString) {
 // Newline
 #[unsafe(no_mangle)]
 pub extern "C" fn ns_println_ns_string(val: NsString) {
-    let bytes = if val.is_heap {
-        unsafe { std::slice::from_raw_parts(val.data.heap.ptr, val.len) }
-    } else {
-        unsafe { &val.data.inline_data[..val.len] }
+    let bytes: &[u8] = unsafe {
+        if val.is_heap {
+            std::slice::from_raw_parts(val.data.heap.ptr as *const u8, val.len)
+        } else {
+            std::slice::from_raw_parts(val.data.inline_data.as_ptr(), val.len)
+        }
     };
 
     // COnvert to rust string (To handle non-UTF-8)
