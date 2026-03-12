@@ -33,6 +33,8 @@
 
 ### :construction_worker: CI
 
+- **(format)** Action to check formatting - ([1ef728b](https://github.com/NextStd/nextstd/commit/1ef728bc85245ff3e2db36de5cb5f776aa41eb7e)) by @Vaishnav-Sabari-Girish
+
 - **(trigger)** Trigger build - ([ef2d2d5](https://github.com/NextStd/nextstd/commit/ef2d2d54728b17c26ae597ae177d3daf8cc9c006)) by @Vaishnav-Sabari-Girish
 
 - **(write to file)** Git-cliff to write to CHANGELOG.md - ([b60042f](https://github.com/NextStd/nextstd/commit/b60042f8f0a8b2e7a12f52ab58d5634644ad2259)) by @Vaishnav-Sabari-Girish
@@ -75,6 +77,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([9257477](https://github.com/NextStd/nextstd/commit/92574771392ffd6767b515e4371e81a2d070221c)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([0b4c1e2](https://github.com/NextStd/nextstd/commit/0b4c1e24085db734b9f9752e2fea726bd396f70f)) by @github-actions[bot]
 
