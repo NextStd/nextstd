@@ -33,6 +33,8 @@
 
 ### :construction_worker: CI
 
+- **(lint)** Add linting using clippy - ([86df915](https://github.com/NextStd/nextstd/commit/86df915c9219c3251b56d08d42617c04c50125dc)) by @Vaishnav-Sabari-Girish
+
 - **(format)** Action to check formatting - ([1ef728b](https://github.com/NextStd/nextstd/commit/1ef728bc85245ff3e2db36de5cb5f776aa41eb7e)) by @Vaishnav-Sabari-Girish
 
 - **(trigger)** Trigger build - ([ef2d2d5](https://github.com/NextStd/nextstd/commit/ef2d2d54728b17c26ae597ae177d3daf8cc9c006)) by @Vaishnav-Sabari-Girish
@@ -77,6 +79,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([d8b1666](https://github.com/NextStd/nextstd/commit/d8b166601f4d6cc8813bbcd6a19449a6fa500142)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([9257477](https://github.com/NextStd/nextstd/commit/92574771392ffd6767b515e4371e81a2d070221c)) by @github-actions[bot]
 
