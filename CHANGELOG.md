@@ -88,6 +88,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([8b378e3](https://github.com/NextStd/nextstd/commit/8b378e31bf0d46d710a0debe8a98644a75e02ec4)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([b911eff](https://github.com/NextStd/nextstd/commit/b911effd073b55f48294a1c5469e792db7b55aa9)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([c9eda86](https://github.com/NextStd/nextstd/commit/c9eda863c8e2f9bb4776c70a487c3a3334f82591)) by @github-actions[bot]
@@ -173,6 +175,8 @@ Feat/add float print - ([882c990](https://github.com/NextStd/nextstd/commit/882c
 
 
 ### :hammer: Build
+
+- **(bump nextstd version)** Bumped from 0.1.7 to 0.1.8 - ([a617da5](https://github.com/NextStd/nextstd/commit/a617da58e36727fe56bf3d85d59ec89276dc8d11)) by @Vaishnav-Sabari-Girish
 
 - **(changed Makefile)** Update Makefile - ([38ada4b](https://github.com/NextStd/nextstd/commit/38ada4b107dd1e6d1aa3f8c9b58f68adf2b54f41)) by @Vaishnav-Sabari-Girish
 
