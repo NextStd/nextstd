@@ -38,6 +38,7 @@ compiling the C examples, and linking everything together.
 - [x] Separate `print` and `println` functions
 - [x] Cargo Workspace Architecture
 - [x] User Input via `ns_read()`
+- [x] Custom Error types (`ns_error_t`)
 - [ ] Printing Variables + Strings (Interpolation/Formatting)
 
 ## Quick Start

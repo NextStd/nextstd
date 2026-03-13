@@ -1,74 +1,102 @@
+use ns_error::NsError;
 use std::ffi::{c_double, c_float, c_int};
 use std::io::{self};
 
 // Helper function to read a line from stdin safely
-fn read_line_buffer() -> String {
+fn read_line_buffer() -> Result<String, NsError> {
     let mut buffer = String::new();
 
-    // Ignore error for now (eg:Closed pipe)
-    let _ = io::stdin().read_line(&mut buffer);
-    buffer.trim().to_string()
+    // If reading from stdin completely fails (e.g., broken pipe), return the specific error
+    if io::stdin().read_line(&mut buffer).is_err() {
+        return Err(NsError::IoReadFailed);
+    }
+
+    Ok(buffer.trim().to_string())
 }
 
-// Read Integer
-#[unsafe(no_mangle)]
+/// Read Integer
+///
 /// # Safety
 ///
-/// This function reads an integer input
-pub unsafe extern "C" fn ns_read_int(ptr: *mut c_int) {
-    if ptr.is_null() {
-        return;
-    }
-
-    let input = read_line_buffer();
-
-    // Try to parse. If it fails, default to 0
-    let val: c_int = input.parse().unwrap_or(0);
-
-    // Unsafe: Write value to C memory address
-    unsafe {
-        *ptr = val;
-    }
-}
-
-// Read float
+/// This function is unsafe because it dereferences a raw pointer provided by C.
+/// The caller must ensure that `ptr` is valid, properly aligned, and points to
+/// initialized memory of type `c_int`. The function performs a null check, but
+/// cannot guarantee the pointer is not dangling.
 #[unsafe(no_mangle)]
-/// # Safety
-///
-/// This function reads a floating point input
-pub unsafe extern "C" fn ns_read_float(ptr: *mut c_float) {
+pub unsafe extern "C" fn ns_read_int(ptr: *mut c_int) -> NsError {
     if ptr.is_null() {
-        return;
+        return NsError::Any; // Prevents segfaults, flags an error
     }
 
-    let input = read_line_buffer();
-
-    // Try to parse. If it fails, default to 0
-    let val: c_float = input.parse().unwrap_or(0.0);
-
-    // Unsafe: Write value to C memory address
-    unsafe {
-        *ptr = val;
+    match read_line_buffer() {
+        Ok(input) => {
+            // Match the parse result instead of blindly unwrapping!
+            match input.parse::<c_int>() {
+                Ok(val) => {
+                    unsafe {
+                        *ptr = val;
+                    }
+                    NsError::Success
+                }
+                Err(_) => NsError::InvalidInput,
+            }
+        }
+        Err(e) => e,
     }
 }
 
-// Read double
-#[unsafe(no_mangle)]
+/// Read float
+///
 /// # Safety
 ///
-/// This function reads a double input
-pub unsafe extern "C" fn ns_read_double(ptr: *mut c_double) {
+/// This function is unsafe because it dereferences a raw pointer provided by C.
+/// The caller must ensure that `ptr` is valid, properly aligned, and points to
+/// initialized memory of type `c_float`. The function performs a null check, but
+/// cannot guarantee the pointer is not dangling.
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn ns_read_float(ptr: *mut c_float) -> NsError {
     if ptr.is_null() {
-        return;
+        return NsError::Any;
     }
 
-    let input = read_line_buffer();
+    match read_line_buffer() {
+        Ok(input) => match input.parse::<c_float>() {
+            Ok(val) => {
+                unsafe {
+                    *ptr = val;
+                }
+                NsError::Success
+            }
+            Err(_) => NsError::InvalidInput,
+        },
+        Err(e) => e,
+    }
+}
 
-    // Try to parse. If it fails, default to 0
-    let val: c_double = input.parse().unwrap_or(0.0);
+/// Read double
+///
+/// # Safety
+///
+/// This function is unsafe because it dereferences a raw pointer provided by C.
+/// The caller must ensure that `ptr` is valid, properly aligned, and points to
+/// initialized memory of type `c_double`. The function performs a null check, but
+/// cannot guarantee the pointer is not dangling.
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn ns_read_double(ptr: *mut c_double) -> NsError {
+    if ptr.is_null() {
+        return NsError::Any;
+    }
 
-    // Unsafe: Write value to C memory address
-    unsafe {
-        *ptr = val;
+    match read_line_buffer() {
+        Ok(input) => match input.parse::<c_double>() {
+            Ok(val) => {
+                unsafe {
+                    *ptr = val;
+                }
+                NsError::Success
+            }
+            Err(_) => NsError::InvalidInput,
+        },
+        Err(e) => e,
     }
 }
