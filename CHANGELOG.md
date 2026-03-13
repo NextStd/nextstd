@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(add ns_error_t)** Custom error type - ([03f09c9](https://github.com/NextStd/nextstd/commit/03f09c933ed9b9a48e8eec9aa4a4039833760677)) by @Vaishnav-Sabari-Girish
+
 - **(string)** Add memory-safe ns_string with Small String Optimization - ([332fe2d](https://github.com/NextStd/nextstd/commit/332fe2dbb766ee14a9f7efb81fc57dbb5b2a0fd1)) by @Vaishnav-Sabari-Girish
 
 - **(add cargo workspace)** Workspaces added for better structure - ([c26523f](https://github.com/NextStd/nextstd/commit/c26523fdc0f665a562c0e519579c2d82890975be)) by @Vaishnav-Sabari-Girish
@@ -84,6 +86,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([c9eda86](https://github.com/NextStd/nextstd/commit/c9eda863c8e2f9bb4776c70a487c3a3334f82591)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([72e6242](https://github.com/NextStd/nextstd/commit/72e6242909eef7a9a1893b3a2fc45246694c0d65)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([f93ff1b](https://github.com/NextStd/nextstd/commit/f93ff1b382662193c7c021d2ecc88f221b98f558)) by @github-actions[bot]
@@ -122,6 +126,10 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #7 from NextStd/error/add_ns_error
+
+feat(add ns_error_t): Custom error type - ([5c789a1](https://github.com/NextStd/nextstd/commit/5c789a104da07e5083661d8dceea20ffb3af09ef)) in [#7](https://github.com/NextStd/nextstd/pull/7) by @Vaishnav-Sabari-Girish
 
 - Merge branch 'main' of github.com:NextStd/nextstd - ([541b9e6](https://github.com/NextStd/nextstd/commit/541b9e62207d1f0bd40774390a4554fc9f783434)) by @Vaishnav-Sabari-Girish
 
