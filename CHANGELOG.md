@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(add colors)** Added terminal colors - ([548e0fb](https://github.com/NextStd/nextstd/commit/548e0fb3690a5cc4448e8d9eae1a3dc97531ab9b)) by @Vaishnav-Sabari-Girish
+
 - **(add ns_error_t)** Custom error type - ([03f09c9](https://github.com/NextStd/nextstd/commit/03f09c933ed9b9a48e8eec9aa4a4039833760677)) by @Vaishnav-Sabari-Girish
 
 - **(string)** Add memory-safe ns_string with Small String Optimization - ([332fe2d](https://github.com/NextStd/nextstd/commit/332fe2dbb766ee14a9f7efb81fc57dbb5b2a0fd1)) by @Vaishnav-Sabari-Girish
@@ -86,6 +88,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([b911eff](https://github.com/NextStd/nextstd/commit/b911effd073b55f48294a1c5469e792db7b55aa9)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([c9eda86](https://github.com/NextStd/nextstd/commit/c9eda863c8e2f9bb4776c70a487c3a3334f82591)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([72e6242](https://github.com/NextStd/nextstd/commit/72e6242909eef7a9a1893b3a2fc45246694c0d65)) by @github-actions[bot]
@@ -126,6 +130,10 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #8 from NextStd/color/color_ansi
+
+feat(add colors): Added terminal colors - ([b250680](https://github.com/NextStd/nextstd/commit/b250680b5e2dd23d0c49926e2730611dee3415cf)) in [#8](https://github.com/NextStd/nextstd/pull/8) by @Vaishnav-Sabari-Girish
 
 - Merge pull request #7 from NextStd/error/add_ns_error
 
