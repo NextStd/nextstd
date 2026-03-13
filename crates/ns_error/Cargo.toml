@@ -1,0 +1,11 @@
+[package]
+name = "ns_error"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+thiserror = "2.0.18"
+
+[lib]
+crate-type = ["lib", "staticlib", "cdylib"]
