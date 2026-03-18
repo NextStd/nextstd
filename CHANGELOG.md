@@ -1,6 +1,8 @@
 
 ### :rocket: New features
 
+- **(ns_data)** Introduce safe dynamic arrays (ns_vec) - ([c5b036b](https://github.com/NextStd/nextstd/commit/c5b036b44f8b960c3f5985675889fc2d48ebd8d0)) by @Vaishnav-Sabari-Girish
+
 - **(core)** Add ns_error compatibility with ns_string - ([a8a13a8](https://github.com/NextStd/nextstd/commit/a8a13a8eb5f07f0102d798ebb8328d08482d3207)) by @Vaishnav-Sabari-Girish
 
 - **(add colors)** Added terminal colors - ([548e0fb](https://github.com/NextStd/nextstd/commit/548e0fb3690a5cc4448e8d9eae1a3dc97531ab9b)) by @Vaishnav-Sabari-Girish
@@ -90,6 +92,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([1f92a9a](https://github.com/NextStd/nextstd/commit/1f92a9a0439f4a8485e28c1657cf2f8b9f38bf23)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([5a49141](https://github.com/NextStd/nextstd/commit/5a49141c62c7aa06085aa2b4d4c6bd948ebbd25a)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([8b378e3](https://github.com/NextStd/nextstd/commit/8b378e31bf0d46d710a0debe8a98644a75e02ec4)) by @github-actions[bot]
@@ -123,6 +127,11 @@
 - **(cl update)** Update CHANGELOG - ([702d6da](https://github.com/NextStd/nextstd/commit/702d6da1493064133aac1ec2cebf7a27e0de7fca)) by @Vaishnav-Sabari-Girish
 
 
+### :recycle: Refactoring
+
+- **(vec.rs)** Seperate file for vec - ([1e78120](https://github.com/NextStd/nextstd/commit/1e78120bf69c8ed3f65f0c5df961580b8f1c0f85)) by @Vaishnav-Sabari-Girish
+
+
 ### :art: Styling
 
 - **(bump)** Bumped version from 0.1.6 to 0.1.7 - ([87c4408](https://github.com/NextStd/nextstd/commit/87c4408bd41d8e3f47a35e7e1d09f8b02122d0a5)) by @Vaishnav-Sabari-Girish
@@ -136,6 +145,10 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #10 from NextStd/feat/ns_data_vector
+
+Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb7cf673864adc070c4d1932c826faa1ba411)) in [#10](https://github.com/NextStd/nextstd/pull/10) by @Vaishnav-Sabari-Girish
 
 - Merge pull request #9 from NextStd/error/add_ns_error_to_ns_string
 
