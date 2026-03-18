@@ -21,7 +21,6 @@ jobs:
         id: git-cliff
         with:
           config: cliff.toml
-          args: -vv
         env:
           OUTPUT: CHANGELOG.md # This forces git-cliff to write to the file
           GITHUB_REPO: ${{ github.repository }}
