@@ -96,6 +96,8 @@
 
 ### :wrench: Miscellaneous
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([631a8c0](https://github.com/NextStd/nextstd/commit/631a8c05c5c54f779a4ae03eeee99dfca3d35f1e)) by @github-actions[bot]
+
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([2b1d123](https://github.com/NextStd/nextstd/commit/2b1d123ca0146441d4318cf78406219bbb7f46e9)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([2bf72c1](https://github.com/NextStd/nextstd/commit/2bf72c1ea9ffc74f5d9ce3d320eef940bcce13cd)) by @github-actions[bot]
@@ -154,6 +156,8 @@
 
 
 ### :white_check_mark: Testing
+
+- **(pre-commit)** Testing latest pre-commit hook - ([d64521a](https://github.com/NextStd/nextstd/commit/d64521a359362c2fc94832f9e35de2a4d47af5a4)) by @Vaishnav-Sabari-Girish
 
 - **(markdown_lint)** Fixing path issue - ([a18a979](https://github.com/NextStd/nextstd/commit/a18a97953be82a495df817739a9dce174d4f5bd2)) by @Vaishnav-Sabari-Girish
 
