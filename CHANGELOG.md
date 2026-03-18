@@ -3,6 +3,15 @@
 
 
 
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
+
+
+## v0.2.1 - 2026-03-18
+
+
+
 ### :rocket: New features
 
 - **(ns_data)** Add safe hashmap and update string docs
