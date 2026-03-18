@@ -1,6 +1,11 @@
+name: Generate Changelog
+
 on:
   push:
       branches: [ "main" ]
+      tags: 
+          - "v*"
+  workflow_dispatch: 
 
 # We need to give the bot permission to push commits to your repo
 permissions:
@@ -12,9 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Generate a changelog
         uses: orhun/git-cliff-action@main
@@ -38,4 +44,4 @@ jobs:
           git commit -m "chore(changelog): update CHANGELOG.md for ${{ github.ref_name }} [skip ci]" || exit 0
           
           # Push the commit back to the branch
-          git push origin HEAD:main
+          git push origin HEAD:main || true
