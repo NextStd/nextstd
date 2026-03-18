@@ -32,13 +32,14 @@ int main() {
 
 ## Safe user input (`ns_read`)
 
-Reading user input in standard C usually involves `scanf`, which is notorious for
-buffer overflows, leaving dangling newlines in the input stream and crashing
+Reading user input in standard C usually involves `scanf`, which is notorious
+for buffer overflows, leaving dangling newlines in the input stream and crashing
 if the user types the wrong data type.
 
-`ns_read` provides a memory-safe, type-safe alternative. If the user enters
-an invalid data type (Like typing `hello` when asked for a number), `ns_read`
-defaults to `0` instead of panicking. It also gracefully handles `NULL` pointers.
+`ns_read` provides a memory-safe, type-safe alternative. If the user enters an
+invalid data type (Like typing `hello` when asked for a number), `ns_read`
+defaults to `0` instead of panicking. It also gracefully handles `NULL`
+pointers.
 
 ```c
 int main() {
@@ -60,8 +61,8 @@ int main() {
 
 ## Safe strings (`ns_string`)
 
-Standard C strings are notorious for memory leaks and buffer overflows. `NextStd`
-uses `ns_string`, which handles it's own memory and utilizes
+Standard C strings are notorious for memory leaks and buffer overflows.
+`NextStd` uses `ns_string`, which handles it's own memory and utilizes
 **Small String Optimization** (SSO)
 
 ```c
@@ -84,4 +85,5 @@ int main() {
 ```
 
 > [!IMPORTANT]
-> `ns_read()` cannot handle `ns_string()` for now. This will be added in future versions
+> `ns_read()` cannot handle `ns_string()` for now. This will be added in future
+> versions

@@ -22,8 +22,8 @@ use :
 make rust
 ```
 
-This generates the static (`.a`) and dynamic (`.so`) libraries in the `target/release`,
-making then ready for C to link against
+This generates the static (`.a`) and dynamic (`.so`) libraries in the
+`target/release`, making then ready for C to link against
 
 ## Project Architecture
 
