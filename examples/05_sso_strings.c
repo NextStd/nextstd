@@ -15,7 +15,7 @@ int main()
   ns_println(short_str);
 
   ns_print("Long string: ");
-  ns_println("long_str");
+  ns_println(long_str);
 
   // Free memory 
   ns_string_free(&short_str);
