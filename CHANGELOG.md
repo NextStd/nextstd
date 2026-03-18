@@ -1,81 +1,4 @@
 
-### :construction_worker: CI
-
-- **(markdown_lint)** Updated markdown_lint - ([1048608](https://github.com/NextStd/nextstd/commit/1048608736f756a9ca2b77c0fa4fd237e103620b)) by @Vaishnav-Sabari-Girish
-
-- **(markdown_lint)** Add linting check for markdown - ([6fe18eb](https://github.com/NextStd/nextstd/commit/6fe18eb2effd6101e2b338ee3292bdbac78d070d)) by @Vaishnav-Sabari-Girish
-
-
-### :package: Other
-
-- **(v0.2.0)** Tag v0.2.0 - ([074313d](https://github.com/NextStd/nextstd/commit/074313dbef342182b8cf0c308bcbc81e3cfd5434)) by @Vaishnav-Sabari-Girish
-
-
-### :page_facing_up: Documentation
-
-- **(USAGE)** Updated USAGE.md - ([8ff9130](https://github.com/NextStd/nextstd/commit/8ff91301a13c26c38ea928a7a74474d19898bc20)) by @Vaishnav-Sabari-Girish
-
-- **(Updated README.md)** And BUILD.md and USAGE.md - ([f9adccf](https://github.com/NextStd/nextstd/commit/f9adccfa143bccd7e3c26190cd7665f0105c28a2)) by @Vaishnav-Sabari-Girish
-
-- **(Updated README.md)** And BUILD.md and USAGE.md - ([ae72381](https://github.com/NextStd/nextstd/commit/ae723816306bc77806319f8a06f98af724c51d21)) by @Vaishnav-Sabari-Girish
-
-
-### :wrench: Miscellaneous
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([a7552e0](https://github.com/NextStd/nextstd/commit/a7552e0ad5f94353d4ed66b28e0142b86547debc)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([32179f4](https://github.com/NextStd/nextstd/commit/32179f432047e0698a20d1ad333be5001b662cc5)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([040b77c](https://github.com/NextStd/nextstd/commit/040b77c175513fb0b38757e5ebd6bad6252f05ce)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([227019e](https://github.com/NextStd/nextstd/commit/227019ee2416bcc11e00bdb97bab60333b057939)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([631a8c0](https://github.com/NextStd/nextstd/commit/631a8c05c5c54f779a4ae03eeee99dfca3d35f1e)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([2b1d123](https://github.com/NextStd/nextstd/commit/2b1d123ca0146441d4318cf78406219bbb7f46e9)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([2bf72c1](https://github.com/NextStd/nextstd/commit/2bf72c1ea9ffc74f5d9ce3d320eef940bcce13cd)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([04330c2](https://github.com/NextStd/nextstd/commit/04330c2aa1400f38e9a13cda050d9987456a4821)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([0bf9f2a](https://github.com/NextStd/nextstd/commit/0bf9f2aa5bacc6541f79ae89cb9ac4f568a000c0)) by @github-actions[bot]
-
-- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([be5db63](https://github.com/NextStd/nextstd/commit/be5db638fa6cb1a001258dc207aa7f39e6cd7d02)) by @github-actions[bot]
-
-
-### :white_check_mark: Testing
-
-- **(pre-commit)** Testing latest pre-commit hook - ([d64521a](https://github.com/NextStd/nextstd/commit/d64521a359362c2fc94832f9e35de2a4d47af5a4)) by @Vaishnav-Sabari-Girish
-
-- **(markdown_lint)** Fixing path issue - ([a18a979](https://github.com/NextStd/nextstd/commit/a18a97953be82a495df817739a9dce174d4f5bd2)) by @Vaishnav-Sabari-Girish
-
-- **(pre-commit)** Testing latest pre-commit hook - ([560e92e](https://github.com/NextStd/nextstd/commit/560e92e85830b15e95c8e5ff1554d32ec58d54a6)) by @Vaishnav-Sabari-Girish
-
-- **(pre-commit)** Testing latest pre-commit hook - ([2c30248](https://github.com/NextStd/nextstd/commit/2c30248a04f9218a189dc5caf89670b1b3a10480)) by @Vaishnav-Sabari-Girish
-
-
-### :twisted_rightwards_arrows: Pull Requests
-
-- Merge branch 'main' of github.com:NextStd/nextstd - ([e8752ad](https://github.com/NextStd/nextstd/commit/e8752addda4cb72695966f9c57693486ead5c60a)) by @Vaishnav-Sabari-Girish
-
-- Merge branch 'main' of github.com:NextStd/nextstd - ([f316b3b](https://github.com/NextStd/nextstd/commit/f316b3b19e93934559ee1ecd42f6f93e5a94de57)) by @Vaishnav-Sabari-Girish
-
-- Merge branch 'main' of github.com:NextStd/nextstd - ([6cb8b61](https://github.com/NextStd/nextstd/commit/6cb8b615f144c8f2e980c875445550b193b9efad)) by @Vaishnav-Sabari-Girish
-
-- Merge pull request #11 from NextStd/install/install_header_and_library
-
-build(install): Make install now installs to system - ([0376af0](https://github.com/NextStd/nextstd/commit/0376af025ddff327c38e37c3c139252be3e1fba6)) in [#11](https://github.com/NextStd/nextstd/pull/11) by @Vaishnav-Sabari-Girish
-
-- Merge pull request #10 from NextStd/feat/ns_data_vector
-
-Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb7cf673864adc070c4d1932c826faa1ba411)) in [#10](https://github.com/NextStd/nextstd/pull/10) by @Vaishnav-Sabari-Girish
-
-
-### :hammer: Build
-
-- **(install)** Make install now installs to system - ([0355c46](https://github.com/NextStd/nextstd/commit/0355c469e3669f39cd4f2c53aaeca8f12fa6b262)) by @Vaishnav-Sabari-Girish
-
-
 ### :rocket: New features
 
 - **(ns_data)** Introduce safe dynamic arrays (ns_vec) - ([c5b036b](https://github.com/NextStd/nextstd/commit/c5b036b44f8b960c3f5985675889fc2d48ebd8d0)) by @Vaishnav-Sabari-Girish
@@ -118,6 +41,10 @@ Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb
 
 ### :construction_worker: CI
 
+- **(markdown_lint)** Updated markdown_lint - ([1048608](https://github.com/NextStd/nextstd/commit/1048608736f756a9ca2b77c0fa4fd237e103620b)) by @Vaishnav-Sabari-Girish
+
+- **(markdown_lint)** Add linting check for markdown - ([6fe18eb](https://github.com/NextStd/nextstd/commit/6fe18eb2effd6101e2b338ee3292bdbac78d070d)) by @Vaishnav-Sabari-Girish
+
 - **(lint)** Add linting using clippy - ([86df915](https://github.com/NextStd/nextstd/commit/86df915c9219c3251b56d08d42617c04c50125dc)) by @Vaishnav-Sabari-Girish
 
 - **(format)** Action to check formatting - ([1ef728b](https://github.com/NextStd/nextstd/commit/1ef728bc85245ff3e2db36de5cb5f776aa41eb7e)) by @Vaishnav-Sabari-Girish
@@ -133,7 +60,20 @@ Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb
 - **(typo)** Trying out typo checker CI - ([1df8ab9](https://github.com/NextStd/nextstd/commit/1df8ab9dba5e1c9471b6a648e166072c475a9b64)) by @Vaishnav-Sabari-Girish
 
 
+### :package: Other
+
+- Remove tag cause of CHANGELOG.md issues - ([1196a2d](https://github.com/NextStd/nextstd/commit/1196a2d648bde292fdd7ec452e95b246cb08b811)) by @Vaishnav-Sabari-Girish
+
+- **(v0.2.0)** Tag v0.2.0 - ([074313d](https://github.com/NextStd/nextstd/commit/074313dbef342182b8cf0c308bcbc81e3cfd5434)) by @Vaishnav-Sabari-Girish
+
+
 ### :page_facing_up: Documentation
+
+- **(USAGE)** Updated USAGE.md - ([8ff9130](https://github.com/NextStd/nextstd/commit/8ff91301a13c26c38ea928a7a74474d19898bc20)) by @Vaishnav-Sabari-Girish
+
+- **(Updated README.md)** And BUILD.md and USAGE.md - ([f9adccf](https://github.com/NextStd/nextstd/commit/f9adccfa143bccd7e3c26190cd7665f0105c28a2)) by @Vaishnav-Sabari-Girish
+
+- **(Updated README.md)** And BUILD.md and USAGE.md - ([ae72381](https://github.com/NextStd/nextstd/commit/ae723816306bc77806319f8a06f98af724c51d21)) by @Vaishnav-Sabari-Girish
 
 - **(version update)** Updated version in README - ([113972c](https://github.com/NextStd/nextstd/commit/113972c8272a670a3ac0aa08acf3a000577a22a5)) by @Vaishnav-Sabari-Girish
 
@@ -168,6 +108,28 @@ Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([febb107](https://github.com/NextStd/nextstd/commit/febb1071077bcff99d9cc1ca4d9c43fdb5cd7968)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([a7552e0](https://github.com/NextStd/nextstd/commit/a7552e0ad5f94353d4ed66b28e0142b86547debc)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([32179f4](https://github.com/NextStd/nextstd/commit/32179f432047e0698a20d1ad333be5001b662cc5)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([040b77c](https://github.com/NextStd/nextstd/commit/040b77c175513fb0b38757e5ebd6bad6252f05ce)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([227019e](https://github.com/NextStd/nextstd/commit/227019ee2416bcc11e00bdb97bab60333b057939)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([631a8c0](https://github.com/NextStd/nextstd/commit/631a8c05c5c54f779a4ae03eeee99dfca3d35f1e)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([2b1d123](https://github.com/NextStd/nextstd/commit/2b1d123ca0146441d4318cf78406219bbb7f46e9)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([2bf72c1](https://github.com/NextStd/nextstd/commit/2bf72c1ea9ffc74f5d9ce3d320eef940bcce13cd)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([04330c2](https://github.com/NextStd/nextstd/commit/04330c2aa1400f38e9a13cda050d9987456a4821)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([0bf9f2a](https://github.com/NextStd/nextstd/commit/0bf9f2aa5bacc6541f79ae89cb9ac4f568a000c0)) by @github-actions[bot]
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([be5db63](https://github.com/NextStd/nextstd/commit/be5db638fa6cb1a001258dc207aa7f39e6cd7d02)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([1f92a9a](https://github.com/NextStd/nextstd/commit/1f92a9a0439f4a8485e28c1657cf2f8b9f38bf23)) by @github-actions[bot]
 
@@ -218,10 +180,32 @@ Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb
 
 ### :white_check_mark: Testing
 
+- **(pre-commit)** Testing latest pre-commit hook - ([d64521a](https://github.com/NextStd/nextstd/commit/d64521a359362c2fc94832f9e35de2a4d47af5a4)) by @Vaishnav-Sabari-Girish
+
+- **(markdown_lint)** Fixing path issue - ([a18a979](https://github.com/NextStd/nextstd/commit/a18a97953be82a495df817739a9dce174d4f5bd2)) by @Vaishnav-Sabari-Girish
+
+- **(pre-commit)** Testing latest pre-commit hook - ([560e92e](https://github.com/NextStd/nextstd/commit/560e92e85830b15e95c8e5ff1554d32ec58d54a6)) by @Vaishnav-Sabari-Girish
+
+- **(pre-commit)** Testing latest pre-commit hook - ([2c30248](https://github.com/NextStd/nextstd/commit/2c30248a04f9218a189dc5caf89670b1b3a10480)) by @Vaishnav-Sabari-Girish
+
 - **(examples update)** Updated examples with latest functions - ([1deb48b](https://github.com/NextStd/nextstd/commit/1deb48b01b2763ba0bcf311e3cde2fcd38b42de9)) by @Vaishnav-Sabari-Girish
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge branch 'main' of github.com:NextStd/nextstd - ([e8752ad](https://github.com/NextStd/nextstd/commit/e8752addda4cb72695966f9c57693486ead5c60a)) by @Vaishnav-Sabari-Girish
+
+- Merge branch 'main' of github.com:NextStd/nextstd - ([f316b3b](https://github.com/NextStd/nextstd/commit/f316b3b19e93934559ee1ecd42f6f93e5a94de57)) by @Vaishnav-Sabari-Girish
+
+- Merge branch 'main' of github.com:NextStd/nextstd - ([6cb8b61](https://github.com/NextStd/nextstd/commit/6cb8b615f144c8f2e980c875445550b193b9efad)) by @Vaishnav-Sabari-Girish
+
+- Merge pull request #11 from NextStd/install/install_header_and_library
+
+build(install): Make install now installs to system - ([0376af0](https://github.com/NextStd/nextstd/commit/0376af025ddff327c38e37c3c139252be3e1fba6)) in [#11](https://github.com/NextStd/nextstd/pull/11) by @Vaishnav-Sabari-Girish
+
+- Merge pull request #10 from NextStd/feat/ns_data_vector
+
+Feat/ns data vector - ([c0fdb7c](https://github.com/NextStd/nextstd/commit/c0fdb7cf673864adc070c4d1932c826faa1ba411)) in [#10](https://github.com/NextStd/nextstd/pull/10) by @Vaishnav-Sabari-Girish
 
 - Merge pull request #9 from NextStd/error/add_ns_error_to_ns_string
 
@@ -269,6 +253,8 @@ Feat/add float print - ([882c990](https://github.com/NextStd/nextstd/commit/882c
 
 
 ### :hammer: Build
+
+- **(install)** Make install now installs to system - ([0355c46](https://github.com/NextStd/nextstd/commit/0355c469e3669f39cd4f2c53aaeca8f12fa6b262)) by @Vaishnav-Sabari-Girish
 
 - **(bump nextstd version)** Bumped from 0.1.7 to 0.1.8 - ([a617da5](https://github.com/NextStd/nextstd/commit/a617da58e36727fe56bf3d85d59ec89276dc8d11)) by @Vaishnav-Sabari-Girish
 
