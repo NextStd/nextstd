@@ -41,6 +41,8 @@
 
 ### :construction_worker: CI
 
+- **(markdown_lint)** Updated markdown_lint - ([1048608](https://github.com/NextStd/nextstd/commit/1048608736f756a9ca2b77c0fa4fd237e103620b)) by @Vaishnav-Sabari-Girish
+
 - **(markdown_lint)** Add linting check for markdown - ([6fe18eb](https://github.com/NextStd/nextstd/commit/6fe18eb2effd6101e2b338ee3292bdbac78d070d)) by @Vaishnav-Sabari-Girish
 
 - **(lint)** Add linting using clippy - ([86df915](https://github.com/NextStd/nextstd/commit/86df915c9219c3251b56d08d42617c04c50125dc)) by @Vaishnav-Sabari-Girish
@@ -93,6 +95,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci] - ([2bf72c1](https://github.com/NextStd/nextstd/commit/2bf72c1ea9ffc74f5d9ce3d320eef940bcce13cd)) by @github-actions[bot]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci] - ([04330c2](https://github.com/NextStd/nextstd/commit/04330c2aa1400f38e9a13cda050d9987456a4821)) by @github-actions[bot]
 
@@ -157,6 +161,8 @@
 
 
 ### :twisted_rightwards_arrows: Pull Requests
+
+- Merge branch 'main' of github.com:NextStd/nextstd - ([f316b3b](https://github.com/NextStd/nextstd/commit/f316b3b19e93934559ee1ecd42f6f93e5a94de57)) by @Vaishnav-Sabari-Girish
 
 - Merge branch 'main' of github.com:NextStd/nextstd - ([6cb8b61](https://github.com/NextStd/nextstd/commit/6cb8b615f144c8f2e980c875445550b193b9efad)) by @Vaishnav-Sabari-Girish
 
