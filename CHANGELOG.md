@@ -10,12 +10,16 @@
 
 ### :page_facing_up: Documentation
 
+- **(CONTRIBUTING)** Updated CONTRIBUTING.md
+
 - **(contributing and coc)** Add CONTRIBUTING.md and CODE_OF_CONDUCT.md
 
 - **(badges)** Added badges for actions and made version badge dynamic
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
