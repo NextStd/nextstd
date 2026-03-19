@@ -12,8 +12,8 @@ you are a C veteran or a Rustacean, there is a place for you here.
 Before you write any code, it helps to understand how NextStd works:
 
 1. **The C Front-End (`include/`):** Contains the C headers and macros (like
-   `ns_vec_get` or `NS_TRY`). We use C11 `_Generic` macros for type routing to
-   keep the API clean.
+   `ns_vec_get` or `ns_println`). We use C11 `_Generic` macros for type routing
+   to keep the API clean.
 2. **The Rust Back-End (`crates/`):** Contains the core logic. This is where
    memory is allocated, bounds are checked, and I/O is safely executed.
 3. **The FFI Boundary:** C macros call the `extern "C"` functions exposed by the
@@ -22,16 +22,25 @@ Before you write any code, it helps to understand how NextStd works:
 
 ## 🛠️ Development Environment Setup
 
-To start developing, you need `gcc` (or `clang`), `make`, and `cargo`.
+To start developing, you need `gcc` (or `clang`), `make`, `cargo`, and the
+`rumdl` markdown linker.
 
 1. Fork and clone the repository.
-2. Build the Rust back-end locally:
+2. Configure the local Git hooks. We use a pre-commit hook to automatically
+   format Rust code and fix Markdown lint warnings before you commit. Run this
+   in the root of the repository:
+
+   ```bash
+   git config core.hooksPath .githooks
+   ```
+
+3. Build the Rust back-end locally:
 
    ```bash
    make rust
    ```
 
-3. Test your changes by writing a C file in the `examples/` directory and
+4. Test your changes by writing a C file in the `examples/` directory and
    running it:
 
    ```bash
@@ -63,11 +72,10 @@ To start developing, you need `gcc` (or `clang`), `make`, and `cargo`.
 
 ## 🚀 Submitting a Pull Request
 
-1. **Create a branch:** `git checkout -b feat/my-new-module` or
-   `git switch -c feat/my-new-module`
+1. **Create a branch:** `git checkout -b feat/my-new-module`
 2. **Make your changes:** Keep commits focused and descriptive.
 3. **Update Documentation:** If you add a new macro or module, update the
-   `mdbook` files in the `docs` Repository.
+   `mdbook` files in the `src/` directory.
 4. **Open a PR:** Describe what you changed, why you changed it, and how to test
    it.
 
