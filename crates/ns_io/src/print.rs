@@ -131,3 +131,24 @@ pub extern "C" fn ns_println_ns_string(val: NsString) {
     // Print and flush
     println!("{}", rust_str);
 }
+
+// Boolean
+/// No Newline
+#[unsafe(no_mangle)]
+pub extern "C" fn ns_print_bool(val: bool) {
+    if val {
+        print!("true");
+    } else {
+        print!("false");
+    }
+}
+
+/// Newline
+#[unsafe(no_mangle)]
+pub extern "C" fn ns_println_bool(val: bool) {
+    if val {
+        println!("true");
+    } else {
+        println!("false");
+    }
+}

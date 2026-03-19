@@ -1,6 +1,6 @@
 use ns_error::NsError;
 use std::ffi::{c_double, c_float, c_int};
-use std::io::{self};
+use std::io::{self, Write}; // <-- Added Write here!
 
 // Helper function to read a line from stdin safely
 fn read_line_buffer() -> Result<String, NsError> {
@@ -98,5 +98,44 @@ pub unsafe extern "C" fn ns_read_double(ptr: *mut c_double) -> NsError {
             Err(_) => NsError::InvalidInput,
         },
         Err(e) => e,
+    }
+}
+
+/// Read Boolean
+///
+/// # Safety
+///
+/// Reads Boolean values
+#[allow(clippy::not_unsafe_ptr_arg_deref)]
+#[unsafe(no_mangle)]
+pub unsafe extern "C" fn ns_read_bool(out: *mut bool) -> NsError {
+    if out.is_null() {
+        return NsError::Any;
+    }
+
+    let mut input = String::new();
+
+    // Flush stdout to ensure any previous prints are visible
+    let _ = io::stdout().flush();
+
+    if io::stdin().read_line(&mut input).is_err() {
+        return NsError::IoReadFailed;
+    }
+
+    // Safely parse the input, allowing for friendly terms like "true", "yes", or "1"
+    match input.trim().to_lowercase().as_str() {
+        "true" | "t" | "yes" | "y" | "1" => {
+            unsafe {
+                *out = true;
+            } // <-- Wrapped in unsafe block
+            NsError::Success
+        }
+        "false" | "f" | "no" | "n" | "0" => {
+            unsafe {
+                *out = false;
+            } // <-- Wrapped in unsafe block
+            NsError::Success
+        }
+        _ => NsError::InvalidInput,
     }
 }

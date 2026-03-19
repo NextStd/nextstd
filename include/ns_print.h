@@ -12,21 +12,24 @@ extern "C" {
   void ns_print_int(int val);
   void ns_print_float(float val);
   void ns_print_double(double val);
+  void ns_print_bool(_Bool val);
   void ns_print_string(const char* val);
-  void ns_print_ns_string(ns_string val); // <-- NEW DECLARATION
+  void ns_print_ns_string(ns_string val); 
 
   // Newline
   void ns_println_int(int val);
   void ns_println_float(float val);
   void ns_println_double(double val);
+  void ns_println_bool(_Bool val);
   void ns_println_string(const char* val);
-  void ns_println_ns_string(ns_string val); // <-- NEW DECLARATION
+  void ns_println_ns_string(ns_string val);
 
   // Generic Macro (No Newline)
 #define ns_print(x) _Generic((x), \
     int: ns_print_int, \
     float: ns_print_float, \
     double: ns_print_double, \
+    _Bool: ns_print_bool, \
     char*: ns_print_string, \
     const char*: ns_print_string, \
     ns_string: ns_print_ns_string \
@@ -37,6 +40,7 @@ extern "C" {
     int: ns_println_int, \
     float: ns_println_float, \
     double: ns_println_double, \
+    _Bool: ns_println_bool, \
     char*: ns_println_string, \
     const char*: ns_println_string, \
     ns_string: ns_println_ns_string \

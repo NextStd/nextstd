@@ -12,12 +12,14 @@ extern "C" {
   ns_error_t ns_read_int(int* ptr);
   ns_error_t ns_read_float(float* ptr);
   ns_error_t ns_read_double(double* ptr);
+  ns_error_t ns_read_bool(_Bool* ptr);
 
   // Generic Read macro 
 #define ns_read(x) _Generic((x), \
     int*: ns_read_int, \
     float*: ns_print_float, \
-    double*: ns_read_double \
+    double*: ns_read_double, \
+    _Bool*: ns_read_bool \
 )(x)
 
 #ifdef __cplusplus
