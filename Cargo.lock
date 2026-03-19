@@ -4,21 +4,21 @@ version = 4
 
 [[package]]
 name = "ns_data"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "ns_error",
 ]
 
 [[package]]
 name = "ns_error"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "thiserror",
 ]
 
 [[package]]
 name = "ns_io"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "ns_error",
  "ns_string",
@@ -26,7 +26,7 @@ dependencies = [
 
 [[package]]
 name = "ns_string"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "ns_error",
 ]

@@ -24,20 +24,22 @@ extern "C" {
 
   // Pushes a value into a vector 
   // Returns NS_ERROR_SUCCESS or an error if heap allocation fails
+// Pushes a value into a vector 
+  // Returns NS_ERROR_SUCCESS or an error if heap allocation fails
 #define ns_vec_push(v_ptr, type, val) \
     ( \
-      ((v_ptr)->len >= (v_ptr)->capacity && ns_vec_grow(v_ptr) != 0 /* NS_ERROR_SUCCESS */) \
-      ? 1 /* NS_ERROR_ANY */ \
-      : ((((type*)((v_ptr)->data))[(v_ptr)->len++] = (val)), 0 /* NS_ERROR_SUCCESS */) \
+      ((v_ptr)->len >= (v_ptr)->capacity && ns_vec_grow(v_ptr) != 0) \
+      ? 1 /* NS_ERROR_ANY (or a specific alloc error code if you add one later) */ \
+      : ((((type*)((v_ptr)->data))[(v_ptr)->len++] = (val)), 0 /* NS_SUCCESS */) \
     )
 
   // Retrieves a value from the vector with strict bounds checking.
-  // Returns NS_ERROR_SUCCESS, or an error if the index is out of bounds.
+  // Returns NS_SUCCESS (0), or an error if the index is out of bounds (22).
   #define ns_vec_get(v_ptr, type, index, out_ptr) \
     ( \
       ((index) < (v_ptr)->len) \
-      ? (*(out_ptr) = ((type*)((v_ptr)->data))[index], 0 /* NS_ERROR_SUCCESS */) \
-      : 1 /* NS_ERROR_ANY or NS_ERROR_OUT_OF_BOUNDS */ \
+      ? (*(out_ptr) = ((type*)((v_ptr)->data))[index], 0 /* NS_SUCCESS */) \
+      : 22 /* NS_ERROR_INDEX_OUT_OF_BOUNDS */ \
     )
 #ifdef __cplusplus
 
