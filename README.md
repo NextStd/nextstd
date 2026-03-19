@@ -11,7 +11,11 @@ macro-driven **C API**.
 
 View the [CHANGELOG.md](./CHANGELOG.md)
 
-![version](https://img.shields.io/badge/version-0.2.1-blue)
+![version](https://img.shields.io/github/v/tag/NextStd/nextstd?label=version)
+
+[![Check for typos](https://github.com/NextStd/nextstd/actions/workflows/typos.yml/badge.svg)](https://github.com/NextStd/nextstd/actions/workflows/typos.yml)
+[![Format the Rust Code](https://github.com/NextStd/nextstd/actions/workflows/fmt.yml/badge.svg)](https://github.com/NextStd/nextstd/actions/workflows/fmt.yml)
+[![Lint](https://github.com/NextStd/nextstd/actions/workflows/lint.yml/badge.svg)](https://github.com/NextStd/nextstd/actions/workflows/lint.yml)
 
 ## Features
 
