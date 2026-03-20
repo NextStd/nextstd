@@ -17,6 +17,18 @@
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
+
+
+### :art: Styling
+
+- **(typo)** Fixed a typo
+
+
+### :twisted_rightwards_arrows: Pull Requests
+
+- Merge branch 'main' of github.com:NextStd/nextstd
+
 
 ## v0.2.3 - 2026-03-20
 
