@@ -8,12 +8,19 @@
 - **(underline)** Add Underline macro to `ns_color`
 
 
+### :bug: Bug fixes
+
+- **(size_t)** Add proper support for size_t in ns_print
+
+
 ### :construction_worker: CI
 
 - **(trigger)** Trigger build
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
