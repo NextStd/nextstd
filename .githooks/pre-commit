@@ -4,6 +4,9 @@ set -e
 # Ensure the script runs from the repository root
 cd "$(git rev-parse --show-toplevel)"
 
+echo "Checking for typos"
+typos
+
 echo "Formatting Rust code..."
 cargo fmt --all
 

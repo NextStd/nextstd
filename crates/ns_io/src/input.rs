@@ -152,7 +152,7 @@ unsafe extern "C" {
 ///
 /// This function reads dynamic input and routes it through
 /// NextStd's native string initializer to ensure SSO
-/// and heap boundaries are respected safetly
+/// and heap boundaries are respected safely
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn ns_read_ns_string(ptr: *mut NsString) -> NsError {
     if ptr.is_null() {
