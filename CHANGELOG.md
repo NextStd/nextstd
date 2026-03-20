@@ -3,9 +3,19 @@
 
 
 
+### :rocket: New features
+
+- **(underline)** Add Underline macro to `ns_color`
+
+
 ### :construction_worker: CI
 
 - **(trigger)** Trigger build
+
+
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 
 ## v0.2.2 - 2026-03-19
