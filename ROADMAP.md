@@ -74,6 +74,11 @@ of `libcurl`.
 * [ ] **Safe Error Propagation:** Catch dropped connections, 404s, or Cloudflare
       blocks via `NS_TRY` blocks instead of crashing the program.
 
+## Phase 5: C++ Integration
+
+* [ ] **C++ Support:** Ensure seamless compatibility for using NextStd macros
+      and functions directly in C++ codebases.
+
 ---
 
 ## The Ultimate Stress Test: CLI Media Scraper
