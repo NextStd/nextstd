@@ -3,6 +3,15 @@
 
 
 
+### :construction_worker: CI
+
+- **(trigger)** Trigger build
+
+
+## v0.2.5 - 2026-03-21
+
+
+
 ### :rocket: New features
 
 - **(ns_io)** Implement type-safe string interpolation for ns_print
@@ -23,6 +32,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
