@@ -8,6 +8,23 @@
 - **(trigger)** Trigger build
 
 
+### :page_facing_up: Documentation
+
+- **(roadmap)** Add ROADMAP.md
+
+
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
+
+
+### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #13 from NextStd/docs/roadmap
+
+docs(roadmap): Add ROADMAP.md
+
+
 ## v0.2.4 - 2026-03-20
 
 
