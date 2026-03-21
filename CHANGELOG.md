@@ -3,9 +3,19 @@
 
 
 
+### :bug: Bug fixes
+
+- **(ns_read)** Bug fix
+
+
 ### :construction_worker: CI
 
 - **(trigger)** Trigger build
+
+
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 
 ## v0.2.5 - 2026-03-21
