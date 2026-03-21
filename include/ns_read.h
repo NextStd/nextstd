@@ -20,7 +20,7 @@ extern "C" {
   // Generic Read macro 
 #define ns_read(x) _Generic((x), \
     int*: ns_read_int, \
-    float*: ns_print_float, \
+    float*: ns_read_float, \
     double*: ns_read_double, \
     _Bool*: ns_read_bool, \
     ns_string*: ns_read_ns_string \
