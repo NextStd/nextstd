@@ -3,6 +3,15 @@
 
 
 
+### :construction_worker: CI
+
+- **(trigger)** Trigger build
+
+
+## v0.2.6 - 2026-03-22
+
+
+
 ### :rocket: New features
 
 - **(cmd)** Implement memory-safe shell command execution with RAII
@@ -14,6 +23,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
