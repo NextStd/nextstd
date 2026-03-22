@@ -14,7 +14,8 @@ LIB_DIR = $(PREFIX)/lib
 LIBS_TO_INSTALL = $(RUST_DIR)/libns_data.a \
                   $(RUST_DIR)/libns_io.a \
                   $(RUST_DIR)/libns_string.a \
-                  $(RUST_DIR)/libns_error.a
+                  $(RUST_DIR)/libns_error.a \
+                  $(RUST_DIR)/libns_cmd.a
 
 # Flags
 # Added -Iinclude so C finds your new header folder locally
