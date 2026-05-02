@@ -3,6 +3,20 @@
 
 
 
+### :construction_worker: CI
+
+- **(trigger)** Trigger build
+
+
+### :wrench: Miscellaneous
+
+- **(version bump)** Bump version
+
+
+## v0.2.7 - 2026-05-02
+
+
+
 ### :rocket: New features
 
 - **(process)** Implement asynchronous process execution module
@@ -14,6 +28,8 @@
 
 
 ### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
 
 - **(changelog)** Update CHANGELOG.md for main [skip ci]
 
