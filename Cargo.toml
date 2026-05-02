@@ -5,7 +5,8 @@ members = [
   "crates/ns_string",
   "crates/ns_error",
   "crates/ns_data",
-  "crates/ns_cmd",
+  "crates/ns_cmd", 
+  "crates/ns_process",
 ]
 
 # Shared metadata

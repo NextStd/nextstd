@@ -15,13 +15,14 @@ LIBS_TO_INSTALL = $(RUST_DIR)/libns_data.a \
                   $(RUST_DIR)/libns_io.a \
                   $(RUST_DIR)/libns_string.a \
                   $(RUST_DIR)/libns_error.a \
-                  $(RUST_DIR)/libns_cmd.a
+                  $(RUST_DIR)/libns_cmd.a \
+									$(RUST_DIR)/libns_process.a
 
 # Flags
 # Added -Iinclude so C finds your new header folder locally
 INCLUDES = -I. -Iinclude
 # Added -lns_strings and -lns_data to link the Rust crates
-LIBS = -L$(RUST_DIR) -lns_cmd -lns_data -lns_io -lns_string -lns_error -lpthread -ldl -lm -Wl,-rpath=$(RUST_DIR)
+LIBS = -L$(RUST_DIR) -lns_process -lns_cmd -lns_data -lns_io -lns_string -lns_error -lpthread -ldl -lm -Wl,-rpath=$(RUST_DIR)
 
 EXAMPLES = $(patsubst $(EXAMPLE_DIR)/%.c,%,$(wildcard $(EXAMPLE_DIR)/*.c))
 
