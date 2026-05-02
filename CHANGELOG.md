@@ -3,9 +3,26 @@
 
 
 
+### :rocket: New features
+
+- **(process)** Implement asynchronous process execution module
+
+
 ### :construction_worker: CI
 
 - **(trigger)** Trigger build
+
+
+### :wrench: Miscellaneous
+
+- **(changelog)** Update CHANGELOG.md for main [skip ci]
+
+
+### :twisted_rightwards_arrows: Pull Requests
+
+- Merge pull request #19 from NextStd/feat/process
+
+feat(process): implement asynchronous process execution module
 
 
 ## v0.2.6 - 2026-03-22
