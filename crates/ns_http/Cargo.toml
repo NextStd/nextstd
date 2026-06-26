@@ -1,0 +1,13 @@
+[package]
+name = "ns_http"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+ns_error = {  path = "../ns_error" }
+ns_string = { path = "../ns_string" }
+reqwest = { version = "0.13.4", features = ["blocking"] }

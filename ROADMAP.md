@@ -51,7 +51,17 @@ calls with safe, memory-managed alternatives.
   * *Features:* Similar to `ns_cmd` but it is non-blocking and allows to run
     background processes.
 
-## Phase 3: Safe File System (`ns_file`)
+## Phase 3: Networking (`ns_http`)
+
+Bringing modern, memory-safe HTTPS requests to C without the massive boilerplate
+of `libcurl`.
+
+* [ ] **Simple GET Requests:** Wrapper around Rust's `reqwest` to easily fetch
+  HTML or JSON APIs directly into dynamically sized `ns_string` structures.
+* [ ] **Safe Error Propagation:** Catch dropped connections, 404s, or Cloudflare
+  blocks via `NS_TRY` blocks instead of crashing the program.
+
+## Phase 4: Safe File System (`ns_file`)
 
 Fixing the resource leaks and buffer overflow risks associated with standard C's
 `FILE*` API.
@@ -62,16 +72,6 @@ Fixing the resource leaks and buffer overflow risks associated with standard C's
 * [ ] **Safe Streaming:** Opaque `ns_file_t` structs managed entirely by the
   Rust backend, allowing C to safely read large files in chunks without ever
   touching raw pointers or leaking descriptors.
-
-## Phase 4: Networking (`ns_http`)
-
-Bringing modern, memory-safe HTTPS requests to C without the massive boilerplate
-of `libcurl`.
-
-* [ ] **Simple GET Requests:** Wrapper around Rust's `reqwest` to easily fetch
-  HTML or JSON APIs directly into dynamically sized `ns_string` structures.
-* [ ] **Safe Error Propagation:** Catch dropped connections, 404s, or Cloudflare
-  blocks via `NS_TRY` blocks instead of crashing the program.
 
 ## Phase 5: C++ Integration
 

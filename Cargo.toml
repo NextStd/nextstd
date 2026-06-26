@@ -6,11 +6,12 @@ members = [
   "crates/ns_error",
   "crates/ns_data",
   "crates/ns_cmd", 
-  "crates/ns_process",
+  "crates/ns_process", 
+  "crates/ns_http",
 ]
 
 # Shared metadata
 [workspace.package]
-version = "0.2.7"
+version = "0.3.0"
 edition = "2024"
-authors = ["Vaishnav Sabari Girish"]
+authors = ["Vaishnav Sabari Girish <vaishnav.sabari.girish@gmail.com>"]
