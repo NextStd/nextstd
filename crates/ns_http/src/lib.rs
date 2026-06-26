@@ -6,6 +6,9 @@ use ns_error::NsError;
 use ns_string::{NsString, NsStringData, NsStringHeap, ns_string_free};
 use reqwest::blocking::Client;
 
+const BROWSER_USER_AGENT: &str =
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0";
+
 #[repr(C)]
 pub struct NsHttpResponse {
     pub body: NsString,
@@ -44,7 +47,7 @@ fn rust_str_to_ns(s: String) -> NsString {
 }
 
 /// # Safety
-/// * `url` must be a vald, null-terminated C string
+/// * `url` must be a valid, null-terminated C string
 /// * `output` must point to a valid, zero-initialized `NsHttpResponse`
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn ns_http_get(url: *const c_char, output: *mut NsHttpResponse) -> NsError {
@@ -54,10 +57,19 @@ pub unsafe extern "C" fn ns_http_get(url: *const c_char, output: *mut NsHttpResp
 
     let url_str = unsafe { CStr::from_ptr(url).to_string_lossy() };
 
-    match reqwest::blocking::get(url_str.as_ref()) {
+    // Build client with User-Agent to bypass basic bot protections
+    let client = match Client::builder().user_agent(BROWSER_USER_AGENT).build() {
+        Ok(c) => c,
+        Err(_) => return NsError::Any,
+    };
+
+    match client.get(url_str.as_ref()).send() {
         Ok(resp) => {
             let status = resp.status().as_u16() as c_int;
-            let body_text = resp.text().unwrap_or_default();
+            let body_text = match resp.text() {
+                Ok(t) => t,
+                Err(_) => return NsError::StringInvalidUtf8,
+            };
 
             unsafe {
                 (*output).status_code = status;
@@ -71,7 +83,7 @@ pub unsafe extern "C" fn ns_http_get(url: *const c_char, output: *mut NsHttpResp
 }
 
 /// # Safety
-/// * `url` must be a vald, null-terminated C string
+/// * `url` must be a valid, null-terminated C string
 /// * `output` must point to a valid, zero-initialized `NsHttpResponse`
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn ns_http_post(
@@ -80,18 +92,21 @@ pub unsafe extern "C" fn ns_http_post(
     output: *mut NsHttpResponse,
 ) -> NsError {
     if url.is_null() || body_data.is_null() || output.is_null() {
-        return NsError::Any;
+        return NsError::InvalidInput;
     }
 
     let url_str = unsafe { CStr::from_ptr(url).to_string_lossy() };
-    let payload_str = unsafe { CStr::from_ptr(body_data).to_string_lossy() };
 
-    let client = Client::new();
-    match client
-        .post(url_str.as_ref())
-        .body(payload_str.into_owned())
-        .send()
-    {
+    // FIX: Safely extract raw bytes without mutating non-UTF-8 characters
+    let payload_bytes = unsafe { CStr::from_ptr(body_data).to_bytes().to_vec() };
+
+    // Build client with User-Agent
+    let client = match Client::builder().user_agent(BROWSER_USER_AGENT).build() {
+        Ok(c) => c,
+        Err(_) => return NsError::Any,
+    };
+
+    match client.post(url_str.as_ref()).body(payload_bytes).send() {
         Ok(resp) => {
             let status = resp.status().as_u16() as c_int;
             let body_text = resp.text().unwrap_or_default();

@@ -36,7 +36,7 @@ int main(void)
 
     if (err == 0) {
       ns_println("POST Status: {}", out.status_code);
-      ns_println("POSt Response: \n{}", out.body);
+      ns_println("POST Response: \n{}", out.body);
     } else {
       ns_println("POST request failed: {}", ns_error_message(err));
     }

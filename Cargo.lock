@@ -627,7 +627,7 @@ dependencies = [
 
 [[package]]
 name = "ns_cmd"
-version = "0.2.7"
+version = "0.3.0"
 dependencies = [
  "ns_error",
  "ns_string",
@@ -635,21 +635,21 @@ dependencies = [
 
 [[package]]
 name = "ns_data"
-version = "0.2.7"
+version = "0.3.0"
 dependencies = [
  "ns_error",
 ]
 
 [[package]]
 name = "ns_error"
-version = "0.2.7"
+version = "0.3.0"
 dependencies = [
  "thiserror",
 ]
 
 [[package]]
 name = "ns_http"
-version = "0.2.7"
+version = "0.3.0"
 dependencies = [
  "ns_error",
  "ns_string",
@@ -658,7 +658,7 @@ dependencies = [
 
 [[package]]
 name = "ns_io"
-version = "0.2.7"
+version = "0.3.0"
 dependencies = [
  "ns_error",
  "ns_string",
@@ -666,14 +666,14 @@ dependencies = [
 
 [[package]]
 name = "ns_process"
-version = "0.2.7"
+version = "0.3.0"
 dependencies = [
  "ns_error",
 ]
 
 [[package]]
 name = "ns_string"
-version = "0.2.7"
+version = "0.3.0"
 dependencies = [
  "ns_error",
 ]

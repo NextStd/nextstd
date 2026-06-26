@@ -71,10 +71,7 @@ uninstall:
 	@echo "Removing NextStd headers from $(INCLUDE_DIR)..."
 	@rm -rf $(INCLUDE_DIR)
 	@echo "Removing NextStd libraries from $(LIB_DIR)..."
-	@rm -f $(LIB_DIR)/libns_data.a \
-	       $(LIB_DIR)/libns_io.a \
-	       $(LIB_DIR)/libns_string.a \
-	       $(LIB_DIR)/libns_error.a
+	@rm -f $(addprefix $(LIB_DIR)/, $(notdir $(LIBS_TO_INSTALL)))
 	@echo "Uninstallation complete!"
 
 # --- Clean Rules ---
