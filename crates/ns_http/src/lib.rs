@@ -46,6 +46,16 @@ fn rust_str_to_ns(s: String) -> NsString {
     }
 }
 
+// --- NEW HELPER ---
+// Centralizes the client configuration so GET, POST, and any future methods
+// use the exact same headers, timeouts, and settings.
+fn build_default_client() -> Result<Client, NsError> {
+    Client::builder()
+        .user_agent(BROWSER_USER_AGENT)
+        .build()
+        .map_err(|_| NsError::Any)
+}
+
 /// # Safety
 /// * `url` must be a valid, null-terminated C string
 /// * `output` must point to a valid, zero-initialized `NsHttpResponse`
@@ -57,10 +67,10 @@ pub unsafe extern "C" fn ns_http_get(url: *const c_char, output: *mut NsHttpResp
 
     let url_str = unsafe { CStr::from_ptr(url).to_string_lossy() };
 
-    // Build client with User-Agent to bypass basic bot protections
-    let client = match Client::builder().user_agent(BROWSER_USER_AGENT).build() {
+    // Use the central helper
+    let client = match build_default_client() {
         Ok(c) => c,
-        Err(_) => return NsError::Any,
+        Err(e) => return e,
     };
 
     match client.get(url_str.as_ref()).send() {
@@ -68,7 +78,7 @@ pub unsafe extern "C" fn ns_http_get(url: *const c_char, output: *mut NsHttpResp
             let status = resp.status().as_u16() as c_int;
             let body_text = match resp.text() {
                 Ok(t) => t,
-                Err(_) => return NsError::StringInvalidUtf8,
+                Err(_) => return NsError::Any,
             };
 
             unsafe {
@@ -97,13 +107,13 @@ pub unsafe extern "C" fn ns_http_post(
 
     let url_str = unsafe { CStr::from_ptr(url).to_string_lossy() };
 
-    // FIX: Safely extract raw bytes without mutating non-UTF-8 characters
+    // Safely extract raw bytes without mutating non-UTF-8 characters
     let payload_bytes = unsafe { CStr::from_ptr(body_data).to_bytes().to_vec() };
 
-    // Build client with User-Agent
-    let client = match Client::builder().user_agent(BROWSER_USER_AGENT).build() {
+    // Use the central helper
+    let client = match build_default_client() {
         Ok(c) => c,
-        Err(_) => return NsError::Any,
+        Err(e) => return e,
     };
 
     match client.post(url_str.as_ref()).body(payload_bytes).send() {
