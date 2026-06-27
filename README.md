@@ -38,8 +38,9 @@ View the [CHANGELOG.md](./CHANGELOG.md)
 
 Curious about what is already implemented and what we are building next? We are
 actively expanding NextStd from a memory-safe I/O wrapper into a complete
-systems toolkit, with upcoming modules for **Safe File I/O**, **HTTP Requests**,
-and **Process Execution**.
+systems toolkit. We have recently completed modules for **Process Execution**
+and **HTTP Requests**, with upcoming modules for **Bot-check bypass** and
+**Safe File I/O** and **Terminal UIs**.
 
 **[Check out the full ROADMAP.md here!](./ROADMAP.md)**
 
@@ -53,6 +54,7 @@ prerequisite dependencies.
 git clone https://github.com/NextStd/nextstd.git
 cd nextstd
 sudo make install
+
 ```
 
 Once installed, you can include NextStd in any external C file:
@@ -61,12 +63,15 @@ Once installed, you can include NextStd in any external C file:
 #include <nextstd/ns.h>
 #include <nextstd/ns_color.h>
 #include <nextstd/ns_data.h>
+#include <nextstd/ns_http.h>
+
 ```
 
 And compile your standalone projects by linking the compiled Rust archives:
 
 ```bash
-gcc main.c -lns_data -lns_io -lns_string -lns_error -lpthread -ldl -lm -o my_app
+gcc main.c -lns_process -lns_cmd -lns_http -lns_data -lns_io -lns_string -lns_error -lpthread -ldl -lm -o my_app
+
 ```
 
 *(To remove the library from your system, simply run `sudo make uninstall` from
@@ -81,6 +86,7 @@ the built-in examples directly from the cloned repository.
 
 ```bash
 make list
+
 ```
 
 **Run a specific example:**
@@ -90,6 +96,8 @@ not include the `.c` extension):
 
 ```bash
 make 01_print_integer
+
 ```
 
-To see more detailed usage instructions, check out [USAGE.md](./USAGE.md).
+To see more detailed usage instructions, check out
+[USAGE.md](https://www.google.com/search?q=./USAGE.md).

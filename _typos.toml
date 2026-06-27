@@ -7,6 +7,7 @@ SSO = "SSO"
 toml = "toml"
 ns = "ns"
 Iinclude = "Iinclude"
+ratatui = "ratatui"
 
 [default]
 extend-ignore-identifiers-re = [
